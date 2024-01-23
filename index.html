@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-  </head>
-  <body>
-    <h1>hello world</h1>
-  </body>
+<head>
+    <title>Product Listing</title>
+</head>
+  <style>
+    .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+}
+
+.product button {
+    background-color: #008080;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+    <style/>
+<body>
+    <h1>Welcome to our E-commerce Store</h1>
+
+    <div class="product-list">
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Description of Product 1</p>
+            <span>$19.99</span>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2</p>
+            <span>$24.99</span>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
 </html>
